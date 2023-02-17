@@ -46,7 +46,6 @@ ul{
     height: 300px;
 }
 
-
 .position{
     position: relative;
 
@@ -59,6 +58,31 @@ ul{
         left: 0;
     }
 }
+
+.footer-bg{
+    background-image: url('../images/footer-bg.jpg');
+    background-size: cover;
+
+    .row{
+        background-image: url('../images/dc-logo-bg.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+
+        .col{
+
+            li{
+                color: rgb(167, 163, 163);
+                font-size: 12px;
+            }
+
+            h4{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
 
 
 
