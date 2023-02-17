@@ -16,12 +16,17 @@
     <div class="background-black">
         <div class="container">
             <h5 class="text-white">CURRENT SERIES</h5>
-            <div class="row">
+            <div class="row d-flex flex-wrap w-50">
+                @foreach($comics as $comic)  
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="card">
-                        <img class="card-img-top img-fluid" src="" alt="">
+                    <div class="card-comics">
+                        <img class="card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                    </div>
+                    <div class="card-body-comics text-white text-uppercase">
+                        <p style="font-size: 12px" class="pt-2">{{ $comic['series'] }}</p>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

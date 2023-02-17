@@ -24,3 +24,18 @@ ul{
         font-size: 12px;
     }
 }
+
+.background-black{
+    background-color: rgb(37, 37, 37);
+}
+
+.card-comics{
+    width: 150px;
+    height: 150px;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;  
+    }
+}
