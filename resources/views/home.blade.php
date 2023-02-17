@@ -14,9 +14,10 @@
 <body>
     @include('partials.header')
     <div class="background-black">
+        <div class="jumbotron"></div>
         <div class="container">
             <h5 class="text-white">CURRENT SERIES</h5>
-            <div class="row d-flex flex-wrap ">
+            <div class="row d-flex flex-wrap">
                 @foreach($comics as $comic)  
                 <div class="col">
                     <div class="card-comics">
