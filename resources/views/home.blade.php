@@ -16,9 +16,9 @@
     <div class="background-black">
         <div class="container">
             <h5 class="text-white">CURRENT SERIES</h5>
-            <div class="row d-flex flex-wrap w-50">
+            <div class="row d-flex flex-wrap ">
                 @foreach($comics as $comic)  
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col">
                     <div class="card-comics">
                         <img class="card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                     </div>
