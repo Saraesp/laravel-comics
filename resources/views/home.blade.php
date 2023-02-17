@@ -16,8 +16,10 @@
     <div class="background-black">
         <div class="jumbotron"></div>
         <div class="container">
-            <h5 class="text-white">CURRENT SERIES</h5>
-            <div class="row d-flex flex-wrap">
+            <div class="position">
+                <h5 class="text-white">CURRENT SERIES</h5>
+            </div>
+            <div class="row pt-5 ms-2">
                 @foreach($comics as $comic)  
                 <div class="col">
                     <div class="card-comics">
