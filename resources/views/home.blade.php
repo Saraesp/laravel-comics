@@ -13,8 +13,17 @@
 
 <body>
     @include('partials.header')
-    <div class="container">
-        <h5>CURRENT SERIES</h5>
+    <div class="background-black">
+        <div class="container">
+            <h5 class="text-white">CURRENT SERIES</h5>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     @include('partials.footer')
 </body>
