@@ -10,16 +10,17 @@
          <div class="row pt-5 ms-2">
              @foreach($comics as $comic)  
              <div class="col">
-                 <div class="card-comics">
-                    <a href=""><img class="card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}"></a> 
-                 </div>
-                 <div class="card-body-comics text-white text-uppercase">
-                    <a class="text-decoration-none text-white" href=""><p style="font-size: 12px" class="pt-2">{{ $comic['series'] }}</p></a> 
-                 </div>
+                <a class="text-decoration-none text-white" href="{{ route('comics-details', ['series' => $comic['series']])}}">
+                    <div class="card-comics">
+                        <img class="card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                    </div>
+                    <div class="card-body-comics text-white text-uppercase">
+                        <p style="font-size: 12px" class="pt-2 ">{{ $comic['series'] }}</p>
+                    </div>
+                </a> 
              </div>
              @endforeach
          </div>
      </div>
- </div>
-@endsection 
-
+ </div> 
+@endsection
