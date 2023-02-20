@@ -21,11 +21,12 @@ Route::get('/', function () {
 Route::get('/comics/{series}', function ($series){
 
     $comics = config('db.series');
-    $single = array_filter($comics, function($item) use($series){
 
-        return $item['series'] == $series;
-    });
-    dd($series);
+    foreach($comics as $comic){
+        if($comic['series'] == $series){
+            $single = $comic;
+        }
+    };
 
     return view('comics_details', compact('single'));
 

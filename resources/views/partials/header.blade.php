@@ -21,4 +21,5 @@
             <input type="text" placeholder="Search" class="border-bottom border-primary border-0 w-50 text-end">
         </div>
     </div>
+    <div class="jumbotron"></div>
 </header>

@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="background-black">
-     <div class="jumbotron"></div>
      <div class="container">
          <div class="position">
              <h5 class="text-white">CURRENT SERIES</h5>
