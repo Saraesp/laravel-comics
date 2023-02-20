@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+//MODIFICHE HEADER 
+#logo{
+    img{
+        width: 60px;
+    }
+}
+
 ul{
     a{
         text-decoration: none;
@@ -25,6 +32,7 @@ ul{
     }
 }
 
+//MODIFICHE CONTENT 
 .background-black{
     background-color: rgb(37, 37, 37);
 }
@@ -59,6 +67,7 @@ ul{
     }
 }
 
+//MODIFICHE FOOTER
 .footer-bg{
     background-image: url('../images/footer-bg.jpg');
     background-size: cover;
@@ -70,14 +79,15 @@ ul{
 
         .col{
 
-            li{
-                color: rgb(167, 163, 163);
-                font-size: 12px;
-            }
-
+            
             h4{
                 font-weight: 700;
             }
+        }
+
+        li, p{
+            color: rgb(167, 163, 163);
+            font-size: 12px;
         }
     }
 }

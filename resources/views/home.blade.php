@@ -23,10 +23,10 @@
                 @foreach($comics as $comic)  
                 <div class="col">
                     <div class="card-comics">
-                        <img class="card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                       <a href=""><img class="card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}"></a> 
                     </div>
                     <div class="card-body-comics text-white text-uppercase">
-                        <p style="font-size: 12px" class="pt-2">{{ $comic['series'] }}</p>
+                       <a class="text-decoration-none text-white" href=""><p style="font-size: 12px" class="pt-2">{{ $comic['series'] }}</p></a> 
                     </div>
                 </div>
                 @endforeach
